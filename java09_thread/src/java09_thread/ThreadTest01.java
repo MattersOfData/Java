@@ -1,9 +1,9 @@
 package java09_thread;
 
-//Thread 처리를 하는 클래스 만드는 방법 1
-//treahd 클래스를 상속받아
-//스레드구현하는 코드를 run() 메소드에 오버라이딩을 한다
-///start()를 호출해준다.
+// Thread 처리를 하는 클래스 만드는 방법 1
+// Treahd 클래스를 상속받아
+// 스레드구현하는 코드를 run() 메소드에 오버라이딩을 한다
+// start()를 호출해준다.
 
 public class ThreadTest01 extends Thread{
 	int num = 1;
