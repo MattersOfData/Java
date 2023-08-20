@@ -1,6 +1,5 @@
 package ch06;
 
-import javax.naming.spi.DirStateFactory.Result;
 
 public class Ex6_4 {// 소스파일과 클래스 이름이(main 메서드가 있는) 동일해야 제대로 실행됨!
 
@@ -14,6 +13,7 @@ public class Ex6_4 {// 소스파일과 클래스 이름이(main 메서드가 있
 	long  result5 = mm.Max(5L,3L);
 	long  result6 = mm.Max2(5L,3L);
 	long  result7 = mm.Min(5L,3L);
+	mm.printGugudan(3); // 3단 출력
 
 	
 	System.out.println("add(5L, 3L) = " + result1 );
@@ -69,6 +69,16 @@ public class Ex6_4 {// 소스파일과 클래스 이름이(main 메서드가 있
 		long Min (long a, long b) {
 			return a>b? b: a;
 			
+		}
+		
+		void printGugudan(int dan) {
+			if(!(2<=dan && dan>=9)) {
+				return; // 입력받은 단(dan)이 2~9단이 아닐경우, 메서드 종료 & 돌아가기
+			}
+			for(int i = 1 ; i <=9 ; i++) {
+				System.out.printf("%d * %d = %d%n", dan , i , dan * i );
+			}
+			return; //생략가능
 		}
 	}
 
