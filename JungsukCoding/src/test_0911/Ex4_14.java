@@ -6,7 +6,10 @@ public class Ex4_14 {
 
 	public static void main(String[] args) {
 		//1. 1~100 사이의 값 지정 : Math.random() 사용
-		int answer= (int)(Math.random()* 100)+1; // 1) 0 <= Math.random() <1 2) 총 100개의 값임으로, 양쪽에 100 곱셈
+		int answer= (int)(Math.random()* 100)+1; // 1) 0 <= Math.random() <1 
+												//2) 총 100개의 값임으로, 양쪽에 100 곱셈 
+												// 3) int로 형변환하여 소수점 버림 
+												//4) 시작값이 1임으로 각 1씩 더함
 		System.out.println(answer); 
 		
 		//2. 1~100 사이값 입력 : Scanner 사용
