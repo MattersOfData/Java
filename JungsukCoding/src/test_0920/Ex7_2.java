@@ -34,7 +34,7 @@ class SutdaDeck2{
 			for(int i = 0; i<cards.length; i++) { //cards[0] ~ cards.length -1
 				int j = (int)(Math.random()*cards.length); // cards[랜덤 : 0 ~ cards.length]
 				
-				// 2 개의 값 자리바꿈(변경)
+				// 2 개의 값 자리바꿈(변경) --> tmp 필요 !
 				SutdaCard2 tmp = cards[i];
 				cards[i]= cards[j];
 				cards[j] = tmp;
@@ -45,7 +45,7 @@ class SutdaDeck2{
 		SutdaCard2 pick(int index){
 		if( index <0 || index >= CARD_NUM)// index 에 int범위의 숫자가 들어올수 있기 때문에,
 										//index가 0 이하거나, index범위가 CARD_NUM보다 클때
-			return null;//  매개변수가 있는 메서드는 반드시 작업 전에 유효성검사
+			return null;				//  매개변수가 있는 메서드는 반드시 작업 전에 유효성검사
 			else return cards[index];// 위치 반환하는 메서드 
 		}
 		
