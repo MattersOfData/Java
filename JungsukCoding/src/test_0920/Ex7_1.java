@@ -17,12 +17,24 @@ class SutdaDeck{
 		
 	// 매개변수 num 과 isKwang에 대해서 조건 생성
 		for (int i = 0 ; i<cards.length; i++) {
-			int num = (i%10)+1;
-			//if(i== 0 || i == 2 || i == 7) {
-			boolean isKwang = (i<10 && i== 1 || i== 3 || i== 5); // 1, 3, 8 의 경우 isKwang true
+			int num = (i%10)+1; // 10 간격으로 반복 
+			//if(i== 0 || i == 2 || i == 7) { // 배열 1,3,8이 있는 index 번호
+			boolean isKwang = (i<10 && (num == 1 || num == 3 || num == 8)); // 1, 3, 8 의 경우 isKwang true
 			
 			cards[i] = new SutdaCard(num, isKwang); // cards 배열에 객체 생성하기 !!
+													// cards배열은 SutdaCard 객체를 저장하기 위한 것으로 예상되므로 기본 정수나 문자열을 할당하는 것은 허용되지 않음
+													// SutdaCard 객체 생성 & 생성자 호출해서 초기화해줘야 함 !
 			}
+		
+//		for(int i = 0; i < cards.length; i++) {// i = 0,1,2,3,4,5,,,,,,19
+//			if((i+1 == 1 || i+1 == 3 || i+1 == 8) && i+1<10){
+//				cards[i] = new SutdaCard1(i+1, true);
+//				}else {
+//				cards[i] = new SutdaCard1(i+1, false);
+//				} 
+//			}
+//		
+	
 		}
 	}
 class SutdaCard{
