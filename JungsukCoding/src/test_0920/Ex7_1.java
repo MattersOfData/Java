@@ -27,14 +27,14 @@ class SutdaDeck{
 			}
 		
 //		for(int i = 0; i < cards.length; i++) {// i = 0,1,2,3,4,5,,,,,,19
-//			if((i+1 == 1 || i+1 == 3 || i+1 == 8) && i+1<10){
-//				cards[i] = new SutdaCard1(i+1, true);
+//			int num = (i%10) + 1; 
+//			if((num == 1 || num == 3 || num == 8) && i<10){
+//				cards[i] = new SutdaCard2(num, true);
 //				}else {
-//				cards[i] = new SutdaCard1(i+1, false);
+//				cards[i] = new SutdaCard2(num, false);
 //				} 
 //			}
 //		
-	
 		}
 	}
 class SutdaCard{
