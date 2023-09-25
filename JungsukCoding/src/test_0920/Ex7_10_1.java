@@ -23,7 +23,8 @@ class MyTv{
 	final int MAX_CHANNEL = 100;
 	final int MIN_CHANNEL = 1;
 	
-	int setChannel(int channel) { 
+	
+	int setChannel(int channel) { // void로 진행해도 됨 --> 굳이 return 값이 필요 없음
 		if(channel >MAX_CHANNEL || MIN_CHANNEL<1) // 매개변수가 있는 경우, 반드시 유효성 검사 진행 !!
 			return 0;
 		return this.channel = channel; // 메서드 안의 lv channel 은 메서드 종료시, 사라지기 때문에 iv 에 담아서 업데이트 필수 !!
