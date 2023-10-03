@@ -48,7 +48,7 @@ public class Ex11_5 {
 			public int compareTo(Object o) {
 				if(o instanceof Student) {// 형변환 가능 확인
 					Student tmp = (Student)o; // 형변환
-				return name.compareTo(tmp.name); // iv와 tmp가 가르키는 name 비교
+				return name.compareTo(tmp.name); //문자열 비교하여, 두 학생의 이름 중 누가 더 큰지 또는 작은지를 결정
 				}return -1; // 형변환 불가한경우 , -1 return
 			}
 			public String toString() {
