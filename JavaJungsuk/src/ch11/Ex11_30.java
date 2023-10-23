@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Ex11_30 {
-// HashMap 예제 with containsKey, equals 
+// ID와 PW를 키와 값의 쌍으로 저장후, 입력된 ID를 키로 HashMap에서 검색해서 얻은 PW를 입력된 PW와 비교 하는 HashMap 예제  
 	
 	public static void main(String[] args) {
 		HashMap map = new HashMap();
